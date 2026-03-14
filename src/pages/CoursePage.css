@@ -1,0 +1,95 @@
+.course-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.course-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+.course-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.course-form input {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--bg);
+  color: var(--text-h);
+  outline: none;
+  font-family: inherit;
+}
+
+.course-form input:focus {
+  border-color: var(--accent);
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.course-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.15s;
+}
+
+.course-card:hover {
+  border-color: var(--accent);
+}
+
+.course-card-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.course-card-link h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.course-semester {
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.course-weeks {
+  font-size: 13px;
+  color: var(--text);
+}

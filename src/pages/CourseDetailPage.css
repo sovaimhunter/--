@@ -1,0 +1,66 @@
+.course-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.course-detail-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.weeks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.week-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.week-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.week-header h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.week-topic {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-sm:hover {
+  background: var(--bg-secondary);
+  color: var(--text-h);
+}
