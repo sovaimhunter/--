@@ -28,7 +28,8 @@ export default function CourseDetailPage() {
 
   const handleAddWeek = () => {
     if (!nextWeek) return
-    const topic = prompt(`第 ${nextWeek} 周主题（可留空）：`) ?? ''
+    const topic = prompt(`第 ${nextWeek} 周主题（可留空）：`)
+    if (topic === null) return
     createDrawing.mutate(`${course.name} - 第${nextWeek}周`, {
       onSuccess: (drawing) => {
         createWeek.mutate({
